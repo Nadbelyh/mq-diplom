@@ -242,6 +242,10 @@
     margin-top: 60px;
   }
 
+  .posts-list {
+    width: calc(100% - 400px);
+  }
+
   .first-post {
     margin-top: 0px;
   }
