@@ -113,16 +113,13 @@
     font-weight: 400;
     font-family: "OpenSans";
     text-align: center;
+    margin-left: 35px;
   }
   
   .menu-link:hover {
     border-bottom: 1px solid #ffffff;
   }
-  
-  .menu-list-item:nth-child(n + 2) {
-    margin-left: 35px;
-  }
-  
+
   .welcome-title {
     max-width: 700px;
     text-transform: uppercase;
@@ -240,16 +237,13 @@
     max-width: 1200px;
   }
   
-  .posts-list {
-    width: calc(100% - 400px);
-  }
-  
   .post {
     display: flex;
-  }
-  
-  .post:nth-child(n + 2) {
     margin-top: 60px;
+  }
+
+  .first-post {
+    margin-top: 0px;
   }
   
   .post-info {
@@ -272,14 +266,11 @@
     font-size: 14px;
     font-weight: 700;
     color: #b59f5b;
+    margin-right: 20px;
   }
   
   .tag-link:hover {
     text-decoration: underline;
-  }
-  
-  .tags-list-item:nth-child(n + 1) {
-    margin-right: 20px;
   }
   
   .post-title {
@@ -356,10 +347,11 @@
   .post-short {
     display: flex;
     align-items: flex-start;
-  }
-  
-  .post-short:nth-child(n + 2) {
     margin-top: 22px;
+  }
+
+  .first-post-short {
+    margin-top: 25px;
   }
   
   .post-short-description {
@@ -708,8 +700,12 @@
     background-color: #f3f7f5;
   }
   
-  .social-media-list-item:nth-child(n + 2) {
+  .social-media-list-item {
     margin-left: 30px;
+  }
+
+  .first-social-media-list-item {
+    margin-left: 0px;
   }
   
   .social-media-Twitter {
@@ -787,8 +783,8 @@
     margin: 12px auto 30px auto;
   }
   
-  .form-row:nth-child(n + 2) {
-    margin-top: 35px;
+  .form-row {
+    margin-top: 30px;
   }
   
   .form-row:last-child {
@@ -852,8 +848,12 @@
     background-image: url("../svg/form-x.svg");
   }
   
-  .radio-group:nth-of-type(n + 2) {
+  .radio-group {
     margin-left: 15px;
+  }
+
+  .first-radio-group {
+    margin-left: 0px;
   }
   
   .select-label {
@@ -928,12 +928,16 @@
   
   @media (min-width: 641px) and (orientation: landscape) {
     .trend-card {
-      width: calc((100% / 4) - 3px);
+      width: calc(25% - 3px);
       min-height: 320px;
     }
   
-    .trend-card:nth-child(n + 2) {
+    .trend-card {
       margin-left: 3px;
+    }
+
+    .first-trend-card {
+      margin-left: 0px;
     }
   
     .products-wrapper,
@@ -1011,30 +1015,29 @@
     .menu-button:before,
     .menu-button:after {
       content: "";
-      width: 100%;
-      height: 20%;
+      width: 23px;
+      height: 3px;
       background-color: #ffffff;
       position: absolute;
       left: 0;
     }
   
     .menu-button-label {
-      width: 100%;
-      height: 20%;
+      width: 23px;
+      height: 3px;
       margin-top: -0.1em;
       background-color: #ffffff;
       position: absolute;
       left: 0;
-      top: 50%;
     }
   
     .trend-card {
-      width: calc((100% / 2) - 2px);
+      width: calc(50% - 2px);
       min-height: 250px;
       margin-bottom: 4px;
     }
   
-    .trend-card:nth-child(n + 2) {
+    .trend-card {
       margin-left: 0px;
     }
   
@@ -1083,7 +1086,7 @@
       margin: 40px 0px;
     }
   
-    .post:nth-child(n + 2) {
+    .post {
       margin-top: 40px;
     }
   
@@ -1115,11 +1118,15 @@
     }
   
     .product-card {
-      width: calc((100% / 2) - 10px);
+      width: calc(50% - 10px);
     }
-  
-    .product-card:nth-child(n + 3) {
+    
+    .product-card {
       margin-top: 25px;
+    }
+
+    .front-row-product-card {
+      margin-top: 0px;
     }
   
     .copyright {
@@ -1144,8 +1151,7 @@
   
     .welcome-title {
       font-size: 26px;
-      width: 85%;
-      padding: 40px 0px 0px 0px;
+      padding: 40px 20px 0px 20px;
     }
   
     .content-wrapper {
@@ -1157,8 +1163,12 @@
       min-height: 230px;
     }
   
-    .trend-card:nth-child(n + 2) {
+    .trend-card {
       margin-top: 3px;
+    }
+
+    .first-trend-card {
+      margin-top: 0px;
     }
   
     .post-tags {
@@ -1172,7 +1182,7 @@
   
     .menu {
       align-self: flex-end;
-      margin-bottom: 40%;
+      margin-bottom: 33%;
     }
   
     .menu-list-item {
@@ -1201,22 +1211,21 @@
     .menu-button:before,
     .menu-button:after {
       content: "";
-      width: 100%;
-      height: 20%;
+      width: 23px;
+      height: 3px;
       background-color: #ffffff;
       position: absolute;
       left: 0;
     }
   
     .menu-button-label {
-      width: 100%;
-      height: 20%;
+      width: 23px;
+      height: 3px;
       margin-top: -0.1em;
       border-radius: 0px;
       background-color: #ffffff;
       position: absolute;
-      left: 0;
-      top: 50%;
+      left: 0;     
     }
   
     .posts-list {
@@ -1233,7 +1242,7 @@
       border-bottom: solid 2px #ededed;
     }
   
-    .post:nth-child(n + 2) {
+    .post {
       margin-top: 38px;
     }
   
@@ -1258,7 +1267,7 @@
       margin-bottom: 0px;
     }
 
-    .product-card:nth-child(n + 2) {
+    .product-card {
       margin-top: 25px;
     }
   
