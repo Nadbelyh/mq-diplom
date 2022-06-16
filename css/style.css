@@ -1182,6 +1182,7 @@ select:focus {
 
   .content-wrapper {
     margin-bottom: 0px;
+    flex-wrap: wrap;
   }
 
   .trend-card {
@@ -1195,6 +1196,10 @@ select:focus {
 
   .first-trend-card {
     margin-top: 0px;
+  }
+
+  .posts-list {
+    margin-right: 0px;
   }
 
   .post-tags {
